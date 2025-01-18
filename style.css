@@ -1,0 +1,180 @@
+body, h1, h2, p, button, input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+
+  
+}
+body{
+  background-image: url('images.jpg');
+}
+.xyz{
+  color: rgb(178, 255, 71);
+  font-style:italic;
+  padding: 50px;
+
+
+}
+/* Container Styling */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease;
+}
+
+input {
+  padding: 10px;
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  animation: bounceIn 0.5s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+/* Textarea Styling */
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 14px;
+}
+
+/* Notes List Styling */
+#notes-list {
+  list-style: none;
+  padding: 0;
+}
+
+#notes-list li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #e9f7ef;
+  border-left: 5px solid #4caf50;
+  border-radius: 4px;
+  animation: fadeIn 0.5s ease;
+}
+
+
+/* Progress Bar Animation */
+.progress-bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  animation: fadeIn 1s ease;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #4caf50;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Motivational Quote Animation */
+#quote {
+  font-style: italic;
+  text-align: center;
+  animation: fadeInQuote 1s ease;
+}
+
+/* Theme Toggle Animation */
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark .container {
+  background-color: #1f1f1f;
+  border-color: #444;
+}
+
+body.dark button {
+  background-color: #333;
+}
+
+body.dark button:hover {
+  background-color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInQuote {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 0 0 8px 8px;
+}

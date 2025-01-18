@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Writing Goal Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <header>
+    <div class="xyz"><h1>DAILY WRITING GOAL TRACKER..........</h1>
+    <h3>Set your daily writing goal and track your progress</h3>
+    </div>
+  </header>
+<body>
+    <div class="container">
+        <header>
+          <h1>Daily Writing Goal Tracker</h1>
+          <button id="theme-toggle">Toggle Theme</button>
+        </header>
+    <main>
+      <section id="set-goal">
+        <h2>Set Your Daily Goal</h2>
+        <input type="number" id="daily-goal" placeholder="Enter word count goal">
+        <button id="set-goal-btn">Set Goal</button>
+      </section>
+
+      <section id="progress">
+        <h2>Today's Progress</h2>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <p id="progress-text">Progress: 0%</p>
+      </section>
+      <section>
+        <h2>Daily Notes</h2>
+        <textarea id="daily-notes" rows="5" placeholder="Write your thoughts or notes here..."></textarea>
+        <button id="save-notes-btn">Save Notes</button>
+      </section>
+      <section>
+        <h2>Saved Notes</h2>
+        <ul id="notes-list"></ul>
+      </section>
+      
+
+      <section id="log-entry">
+        <h2>Log Your Writing</h2>
+        <input type="number" id="word-count" placeholder="Words written">
+        <button id="log-btn">Log Progress</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Timestamp</th>
+              <th>Word Count</th>
+            </tr>
+          </thead>
+          <tbody id="log-table">
+            <!-- Entries will be added dynamically -->
+          </tbody>
+        </table>
+      </section>
+
+      <section id="motivation">
+        <h2>Motivational Quote</h2>
+        <p id="quote">"Start writing, no matter what. The water does not flow until the faucet is turned on." - Louis L’Amour</p>
+        <button id="new-quote-btn">New Quote</button>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+<footer class="footer">
+    <p>&copy; All Rights reserved by @SUSHIL</p>
+</footer>
+</html>
